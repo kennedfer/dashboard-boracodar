@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+:root {
+  --primary: #363447;
+  --background: #2a2738;
+  --transparent: #ffffff1a;
+  --secondary: #464556;
+}
+
+#root {
+  height: 97vh;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter";
+  color: white;
+
+  margin: 0;
+  background-color: var(--background);
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.half-w {
+  width: 50%;
+}
+
+.half-h {
+  height: 50%;
+}
+
+.full-h {
+  height: 100%;
+}
+.full-w {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.f-bottom {
+  align-self: flex-end;
+}
+
+.f-collum {
+  flex-direction: column;
+}
+
+.f-center {
+  align-items: center;
+}
+
+.f-h-center {
+  justify-items: center;
+}
+
+.f-v-center {
+  align-items: center;
+}
+
+.f-sp-around {
+  justify-content: space-around;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.fg-2 {
+  flex-grow: 2;
+}
+
+.g-min {
+  gap: 5px;
+}
+
+.g-0x {
+  gap: 16px;
+}
+
+.g-1x {
+  gap: 32px;
+}
+
+.g-2x {
+  gap: 60px;
+}
+
+.p-1x {
+  padding: 1em;
+}
+
+.p-2x {
+  padding: 2em;
+}
+
+.p-3x {
+  padding: 3em;
+}
+
+.p-top-2x {
+  padding-top: 2em;
+}
+
+.p-5x {
+  padding: 8em;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-medium {
+  font-size: 120%;
+}
+
+.t-large {
+  font-size: 150%;
+}
+
+.t-larger {
+  font-size: 200%;
+}
+
+.t-bold {
+  font-weight: bold;
+}
+
+.red {
+  background-color: red;
+}
+
+.b-round {
+  border-radius: 16px;
+}
+
+.bar {
+  width: 15px;
+  background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
+  border-radius: 20px;
+}
+
+.large-circle {
+  width: 13em;
+  height: 13em;
+
+  border: 1px solid #464556;
+  border-radius: 100%;
+}
+
+.small-circle {
+  width: 9.5em;
+  height: 9.5em;
+
+  border-radius: 100%;
+}
+
+.smaller-circle {
+  width: 1em;
+  height: 1em;
+
+  border-radius: 100%;
+}
+
+.smaller-triangle {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 0.9em;
+  height: 0.8em;
+}
+.smaller-down-triangle {
+  rotate: 180deg;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  width: 0.9em;
+  height: 0.8em;
+}
+
+.graph-axis {
+  border-top: 5px solid var(--transparent);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.iz-1 {
+  z-index: 1;
+}
+
+.page-pad {
+  padding: 8em;
+  padding-bottom: 11em;
+}
+
+.small-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.large-shadow {
+  box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+}
+
+.purple-gradient {
+  background: linear-gradient(121.94deg, #ce9ffc 15.98%, #7367f0 82.85%);
+}
+
+.orange-gradient {
+  background: linear-gradient(121.94deg, #df9780 15.98%, #a66de9 82.85%);
+}
+
+.green-gradient {
+  background: linear-gradient(180deg, #81fbb8 0%, #28c76f 100%);
+}
+
+.red-gradient {
+  background: linear-gradient(180deg, #ea5455 0%, #feb692 100%);
+}
+
+.black-gradient {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-aspect-ratio: 1) {
+  .md-collum {
+    flex-direction: column;
+  }
+
+  .page-pad {
+    padding: 2em;
+    padding-bottom: 10em;
+  }
+
+  .md-t-center {
+    text-align: center;
+  }
+
+  .md-no-gap {
+    gap: 0;
+  }
+}
